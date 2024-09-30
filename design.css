@@ -1,0 +1,47 @@
+body {
+font-family: "Source Code Pro", system-ui;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.search-container {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+h1 {
+    color: #333;
+}
+
+select,
+input,
+button {
+    font-family: "Source Code Pro", system-ui;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border:1px solid #e6e6e6;
+}
+
+button {
+    background-color: #cfcfcf;
+    color: white;
+    cursor: pointer;
+        border-radius: 1.2em;
+        border: none;
+            transition: 0.8s;
+}
+
+button:hover {
+    background-color: #c90848;
+    transition: 0.8s;
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Search Engine</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="search-container">
+        <h1>Multi Search Engine</h1>
+        <select id="search-engine">
+            <option value="https://www.google.com/search?q=">Google</option>
+            <option value="https://www.bing.com/search?q=">Bing</option>
+            <option value="https://search.yahoo.com/search?p=">Yahoo</option>
+            <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+            <option value="https://www.startpage.com/do/search?q=">Startpage</option>
+            <option value="https://www.qwant.com/?q=">Qwant</option>
+            <option value="http://3g2upl4pq6kufc4m.onion/?q=">Tor</option>
+        </select>
+
+
+
+        <input type="text" id="search-input" placeholder="search what u want...">
+        <button id="search-btn">Search</button>
+    </div>
+
+    <script >
+    document.getElementById('search-btn').addEventListener('click', function () {
+        const engine = document.getElementById('search-engine').value;
+        const query = document.getElementById('search-input').value;
+
+        if (query) {
+            window.open(engine + encodeURIComponent(query), '_blank');
+        } else {
+            alert('Please enter a search quarey');
+        }
+    });
+
+
+
+    </script>
+</body>
+
+</html>
